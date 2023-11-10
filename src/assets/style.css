@@ -1,0 +1,10 @@
+* {
+  scroll-behavior: smooth;
+}
+body {
+  background-image: url(test.png);
+  backdrop-filter: blur(5px);
+}
+.scrollable-scrollspy {
+  height: 300px;
+}

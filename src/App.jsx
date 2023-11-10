@@ -3,7 +3,8 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 
 import AboutMe from "./components/AboutMe";
-import Skills from "./components/Skills";
+import Profile from "./components/Profile";
+import Carousel from "./components/Carousel";
 
 const App = () => {
   useEffect(() => {
@@ -11,12 +12,14 @@ const App = () => {
     Aos.refresh();
   }, []);
   return (
-    <section className="vh-100">
-      <div className="container row row-cols-2">
-        <div className="col"></div>
+    <section className="container vh-100 d-flex align-items-center">
+      <div className="row row-cols-1 row-cols-lg-2">
+        <div className="col">
+          <Profile />
+        </div>
         <div className="col row row-cols-1">
           <AboutMe />
-          <Skills />
+          <Carousel />
         </div>
       </div>
     </section>

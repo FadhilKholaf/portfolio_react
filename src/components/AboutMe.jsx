@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
 
 const AboutMe = () => {
   return (
-    <p>Software engineering student in SMK Telkom Malang</p>
-  )
-}
+    <>
+      <p className="display-3">About Me</p>
+      <p>Software engineering student in SMK Telkom Malang</p>
+    </>
+  );
+};
 
-export default AboutMe
+export default AboutMe;
