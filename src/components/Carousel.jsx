@@ -6,7 +6,7 @@ import NavItem from "./NavItem";
 const Carousel = () => {
   return (
     <div
-      data-aos="fade-up-left"
+      data-aos="zoom-in-right"
       className="align-self-end p-0 container d-flex justify-content-center row row-cols-1"
     >
       <div className="p-0">
