@@ -1,6 +1,9 @@
 * {
   scroll-behavior: smooth;
   color: whitesmoke;
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
 }
 .bg-blur {
   filter: blur(10px) brightness(50%);
@@ -8,14 +11,14 @@
 .scrollable-scrollspy {
   height: 12.5rem;
 }
-.img-profile{
+.img-profile {
   height: 30rem;
 }
 @media screen and (width < 992px) {
   .scrollable-scrollspy {
-    height: 8rem;
+    height: 8.5rem;
   }
-  .img-profile{
-    height: 20rem;
+  .img-profile {
+    height: 16rem;
   }
 }

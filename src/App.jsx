@@ -10,7 +10,7 @@ import Background from "./assets/background.mp4";
 const App = () => {
   useEffect(() => {
     Aos.init({
-      duration: 1000,
+      duration: 2000,
       easing: "ease-in-out",
     });
     Aos.refresh();
@@ -25,7 +25,7 @@ const App = () => {
         className="vw-100 vh-100 object-fit-fill position-absolute z-0 bg-blur"
       ></video>
       <section className="vh-100 container d-flex align-items-center">
-        <div className="row row-cols-1 row-cols-lg-2 z-1 grid gap-2 gap-lg-0 d-flex justify-content-center">
+        <div className="row row-cols-1 row-cols-lg-2 z-1 grid gap-5 gap-lg-0 d-flex justify-content-center">
           <div className="col">
             <Profile />
           </div>
