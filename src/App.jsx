@@ -5,24 +5,37 @@ import "aos/dist/aos.css";
 import AboutMe from "./components/AboutMe";
 import Profile from "./components/Profile";
 import Carousel from "./components/Carousel";
+import Background from "./assets/background.mp4";
 
 const App = () => {
   useEffect(() => {
-    Aos.init();
+    Aos.init({
+      duration: 1000,
+      easing: "ease-in-out",
+    });
     Aos.refresh();
   }, []);
   return (
-    <section className="container vh-100 d-flex align-items-center">
-      <div className="row row-cols-1 row-cols-lg-2">
-        <div className="col">
-          <Profile />
+    <>
+      <video
+        src={Background}
+        autoPlay
+        muted
+        loop
+        className="vw-100 vh-100 object-fit-fill position-absolute z-0 bg-blur"
+      ></video>
+      <section className="vh-100 container d-flex align-items-center">
+        <div className="row row-cols-1 row-cols-lg-2 z-1 grid gap-5 gap-lg-0 d-flex justify-content-center">
+          <div className="col">
+            <Profile />
+          </div>
+          <div className="col row row-cols-1 px-4 grid gap-5 gap-lg-0 d-flex justify-content-center">
+            <AboutMe />
+            <Carousel />
+          </div>
         </div>
-        <div className="col row row-cols-1">
-          <AboutMe />
-          <Carousel />
-        </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

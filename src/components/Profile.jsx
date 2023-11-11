@@ -1,13 +1,13 @@
-import React from 'react'
+import React from "react";
 
-import Fadhil from '../assets/fadhil.jpg'
+import Fadhil from "../assets/fadhil.jpg";
 
 const Profile = () => {
   return (
-    <div className='d-flex justify-content-center'>
-      <img className='w-75 rounded shadow-lg' src={Fadhil} alt={"fadhil.jpg"} />
+    <div data-aos="fade-right" className="container d-flex justify-content-center">
+      <img className="rounded shadow-lg img-profile" src={Fadhil} alt={"fadhil.jpg"} />
     </div>
-  )
-}
+  );
+};
 
-export default Profile
+export default Profile;
