@@ -13,7 +13,7 @@
 }
 @media screen and (width < 992px) {
   .scrollable-scrollspy {
-    height: 10rem;
+    height: 8rem;
   }
   .img-profile{
     height: 20rem;
