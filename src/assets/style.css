@@ -31,4 +31,11 @@
   .img-profile {
     height: 16rem;
   }
+  .nav-link p {
+    opacity: 0.25;
+    transition: 0.5s;
+  }
+  .nav-link.active p {
+    opacity: 1;
+  }
 }
