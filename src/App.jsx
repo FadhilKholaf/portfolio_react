@@ -5,7 +5,7 @@ import "aos/dist/aos.css";
 import AboutMe from "./components/AboutMe";
 import Profile from "./components/Profile";
 import Carousel from "./components/Carousel";
-import Background from "./assets/background.mp4";
+import Background from "./assets/videos/background.mp4";
 
 const App = () => {
   useEffect(() => {

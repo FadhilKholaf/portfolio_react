@@ -1,6 +1,6 @@
 import React from "react";
 
-import Fadhil from "../assets/fadhil.jpg";
+import Fadhil from "../assets/images/fadhil.jpg";
 
 const Profile = () => {
   return (

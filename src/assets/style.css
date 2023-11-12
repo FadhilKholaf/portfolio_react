@@ -9,10 +9,20 @@
   filter: blur(10px) brightness(50%);
 }
 .scrollable-scrollspy {
-  height: 12.5rem;
+  height: 11rem;
+}
+.min-height {
+  min-height: 100%;
 }
 .img-profile {
   height: 30rem;
+}
+.nav-link p {
+  opacity: 0.25;
+  transition: 0.25s;
+}
+.nav-link.active p {
+  opacity: 1;
 }
 @media screen and (width < 992px) {
   .scrollable-scrollspy {
