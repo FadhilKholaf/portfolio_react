@@ -56,25 +56,6 @@ const Carousel = () => {
               delay="500"
             />
             <Button value="Adobe Illustrator" animate="fade-left" delay="600" />
-
-            <Button value="Adobe Illustrator" animate="fade-left" delay="600" />
-            <Button value="Adobe Illustrator" animate="fade-left" delay="600" />
-            <Button value="Adobe Illustrator" animate="fade-left" delay="600" />
-            <Button value="Adobe Illustrator" animate="fade-left" delay="600" />
-            <Button value="Adobe Illustrator" animate="fade-left" delay="600" />
-            <Button value="Adobe Illustrator" animate="fade-left" delay="600" />
-            <Button value="Adobe Illustrator" animate="fade-left" delay="600" />
-            <Button value="Adobe Illustrator" animate="fade-left" delay="600" />
-            <Button value="Adobe Illustrator" animate="fade-left" delay="600" />
-            <Button value="Adobe Illustrator" animate="fade-left" delay="600" />
-            <Button value="Adobe Illustrator" animate="fade-left" delay="600" />
-            <Button value="Adobe Illustrator" animate="fade-left" delay="600" />
-            <Button value="Adobe Illustrator" animate="fade-left" delay="600" />
-            <Button value="Adobe Illustrator" animate="fade-left" delay="600" />
-            <Button value="Adobe Illustrator" animate="fade-left" delay="600" />
-            <Button value="Adobe Illustrator" animate="fade-left" delay="600" />
-            <Button value="Adobe Illustrator" animate="fade-left" delay="600" />
-
             <Button value="Figma" animate="fade-left" delay="700" />
           </div>
         </div>
