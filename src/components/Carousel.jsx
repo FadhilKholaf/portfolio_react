@@ -4,7 +4,6 @@ import Button from "./Button";
 import NavItem from "./NavItem";
 
 const Carousel = () => {
-
   const [activeSection, setActiveSection] = useState(null);
 
   useEffect(() => {
@@ -17,11 +16,7 @@ const Carousel = () => {
         }
       });
     };
-
-    window.addEventListener("touchmove", handleScroll);
-    return () => {
-      window.removeEventListener("touchmove", handleScroll);
-    };
+    window.addEventListener("click", handleScroll);
   }, []);
 
   return (
@@ -31,10 +26,26 @@ const Carousel = () => {
     >
       <div className="p-0">
         <ul className="nav d-flex justify-content-between">
-          <NavItem id="#Skills" title="Skills" active={activeSection === "Skills"} />
-          <NavItem id="#Experience" title="Experience" active={activeSection === "Experience"} />
-          <NavItem id="#Education" title="Education" active={activeSection === "Education"} />
-          <NavItem id="#Certificates" title="Certificates" active={activeSection === "Certificates"} />
+          <NavItem
+            id="#Skills"
+            title="Skills"
+            active={activeSection === "Skills"}
+          />
+          <NavItem
+            id="#Experience"
+            title="Experience"
+            active={activeSection === "Experience"}
+          />
+          <NavItem
+            id="#Education"
+            title="Education"
+            active={activeSection === "Education"}
+          />
+          <NavItem
+            id="#Certificates"
+            title="Certificates"
+            active={activeSection === "Certificates"}
+          />
         </ul>
       </div>
       <div
@@ -43,7 +54,10 @@ const Carousel = () => {
         className="container scrollable-scrollspy overflow-hidden row row-cols-1 border border-warning rounded p-0"
         tabIndex="0"
       >
-        <div id="Skills" className="col min-height px-2 py-2 scroll-spy-section">
+        <div
+          id="Skills"
+          className="col min-height px-2 py-2 scroll-spy-section"
+        >
           <div className="d-flex flex-wrap grid gap-2">
             <Button value="HTML" animate="fade-left" />
             <Button value="CSS" animate="fade-left" delay="100" />
@@ -59,20 +73,29 @@ const Carousel = () => {
             <Button value="Figma" animate="fade-left" delay="700" />
           </div>
         </div>
-        <div id="Experience" className="col px-2 py-2 min-height scroll-spy-section">
+        <div
+          id="Experience"
+          className="col px-2 py-2 min-height scroll-spy-section"
+        >
           <div className="d-flex flex-wrap grid gap-2">
             <Button value="Software Engineering student" />
             <Button value="Video editor freelancer" />
           </div>
         </div>
-        <div id="Education" className="col px-2 py-2 min-height scroll-spy-section">
+        <div
+          id="Education"
+          className="col px-2 py-2 min-height scroll-spy-section"
+        >
           <div className="d-flex flex-wrap grid gap-2">
             <Button value="SDI Al-Munawwar" />
             <Button value="MTsN 1 Tulungagung" />
             <Button value="SMK Telkom Malang" />
           </div>
         </div>
-        <div id="Certificates" className="col px-2 py-2 min-height scroll-spy-section">
+        <div
+          id="Certificates"
+          className="col px-2 py-2 min-height scroll-spy-section"
+        >
           <div className="d-flex flex-wrap grid gap-2">
             <Button value="Kaggle pandas course" />
           </div>
