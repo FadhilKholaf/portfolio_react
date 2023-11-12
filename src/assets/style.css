@@ -19,7 +19,7 @@
 }
 .nav-link p {
   opacity: 0.25;
-  transition: 0.25s;
+  transition: 0.5s;
 }
 .nav-link.active p {
   opacity: 1;
