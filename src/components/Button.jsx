@@ -3,7 +3,7 @@ import React from "react";
 const Button = (props) => {
   return (
       <button
-        data-aos="fade-left"
+        data-aos={props.data}
         data-aos-delay={props.delay}
         data-aos-anchor-placement="top-bottom"
         type="button"
