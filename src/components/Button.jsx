@@ -4,7 +4,7 @@ const Button = (props) => {
   return (
     <div>
       <button
-        data-aos={props.animate}
+        data-aos="fade-left"
         data-aos-delay={props.delay}
         data-aos-anchor-placement="top-bottom"
         type="button"

@@ -22,7 +22,7 @@ const Carousel = () => {
   return (
     <div
       data-aos="zoom-in-right"
-      className="align-self-end p-0 container d-flex justify-content-center row row-cols-1 "
+      className="align-self-end p-0 container d-flex justify-content-center row row-cols-1"
     >
       <div className="p-0">
         <ul className="nav d-flex justify-content-between">
@@ -59,18 +59,18 @@ const Carousel = () => {
           className="col min-height px-2 py-2 scroll-spy-section"
         >
           <div className="d-flex flex-wrap grid gap-2">
-            <Button value="HTML" animate="fade-left" />
-            <Button value="CSS" animate="fade-left" delay="100" />
-            <Button value="JS" animate="fade-left" delay="200" />
-            <Button value="Node JS" animate="fade-left" delay="300" />
-            <Button value="React JS" animate="fade-left" delay="400" />
+            <Button value="HTML" />
+            <Button value="CSS" delay="100" />
+            <Button value="JS" delay="200" />
+            <Button value="Node JS" delay="300" />
+            <Button value="React JS" delay="400" />
             <Button
               value="Adobe After Effect"
               animate="fade-left"
               delay="500"
             />
-            <Button value="Adobe Illustrator" animate="fade-left" delay="600" />
-            <Button value="Figma" animate="fade-left" delay="700" />
+            <Button value="Adobe Illustrator" delay="600" />
+            <Button value="Figma" delay="700" />
           </div>
         </div>
         <div

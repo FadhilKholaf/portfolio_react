@@ -6,6 +6,7 @@ import AboutMe from "./components/AboutMe";
 import Profile from "./components/Profile";
 import Carousel from "./components/Carousel";
 import Background from "./assets/videos/background.mp4";
+import Social from "./components/Social";
 
 const App = () => {
   useEffect(() => {
@@ -25,12 +26,13 @@ const App = () => {
         className="vw-100 vh-100 object-fit-fill position-absolute z-0 bg-blur"
       ></video>
       <section className="vh-100 container d-flex align-items-center">
-        <div className="row row-cols-1 row-cols-lg-2 z-1 grid gap-5 gap-lg-0 d-flex justify-content-center">
-          <div className="col">
+        <div className="row row-cols-1 row-cols-lg-2 z-1 grid gap-3 gap-lg-0 d-flex justify-content-center">
+          <div className="col d-flex justify-content-center p-0">
             <Profile />
           </div>
-          <div className="col row row-cols-1 px-4 grid gap-5 gap-lg-0 d-flex justify-content-center">
+          <div className="col row row-cols-1 px-4 grid gap-3 gap-lg-0 d-flex justify-content-center">
             <AboutMe />
+            <Social />
             <Carousel />
           </div>
         </div>
