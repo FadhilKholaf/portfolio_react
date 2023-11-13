@@ -14,8 +14,8 @@ class TextScrambleClass {
     for (let i = 0; i < length; i++) {
       const from = oldText[i] || "";
       const to = newText[i] || "";
-      const start = Math.floor(Math.random() * 10);
-      const end = start + Math.floor(Math.random() * 200);
+      const start = Math.floor(Math.random() * 40);
+      const end = start + Math.floor(Math.random() * 40);
       this.queue.push({ from, to, start, end });
     }
     cancelAnimationFrame(this.frameRequest);
@@ -67,7 +67,7 @@ const TextScramble = () => {
     let counter = 0;
     const next = () => {
       textScrambleRef.current.setText(phrases[counter]).then(() => {
-        setTimeout(next, 2000);
+        setTimeout(next, 3000);
       });
       counter = (counter + 1) % phrases.length;
     };
