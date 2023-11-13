@@ -33,18 +33,17 @@
   opacity: 1;
 }
 .dud {
-  color: green;
+  color: black;
 }
 .text {
-  background-color: rgb(000, 000, 000, 0.5);
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(10px);
 }
 @media screen and (width < 992px) {
   .scrollable-scrollspy {
     height: 8.5rem;
   }
   .img-profile {
-    height: 16rem;
+    height: 18rem;
   }
   .nav-link p {
     opacity: 1;

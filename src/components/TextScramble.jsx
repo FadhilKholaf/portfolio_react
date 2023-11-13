@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 class TextScrambleClass {
   constructor(el) {
     this.el = el;
-    this.chars = "10";
+    this.chars = "!<>-_\\/[]{}—=+*^?#________";
     this.update = this.update.bind(this);
   }
   setText(newText) {
@@ -14,8 +14,8 @@ class TextScrambleClass {
     for (let i = 0; i < length; i++) {
       const from = oldText[i] || "";
       const to = newText[i] || "";
-      const start = Math.floor(Math.random() * 40);
-      const end = start + Math.floor(Math.random() * 40);
+      const start = Math.floor(Math.random() * 10);
+      const end = start + Math.floor(Math.random() * 200);
       this.queue.push({ from, to, start, end });
     }
     cancelAnimationFrame(this.frameRequest);
@@ -76,7 +76,7 @@ const TextScramble = () => {
       cancelAnimationFrame(textScrambleRef.current.frameRequest);
     };
   }, []);
-  return <p ref={textRef} data-aos="fade-up" className="text fs-5 rounded px-2 mb-2 fw-light"></p>;
+  return <p ref={textRef} data-aos="fade-up" className="text fs-5 rounded px-2 mb-2 fw-light border border-light"></p>;
 };
 
 export default TextScramble;

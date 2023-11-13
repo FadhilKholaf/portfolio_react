@@ -22,7 +22,7 @@ const Carousel = () => {
   return (
     <div
       data-aos="zoom-in-right"
-      className="align-self-end p-0 container d-flex justify-content-center row row-cols-1"
+      className="align-self-end p-0 container d-flex justify-content-center row row-cols-1 mb-4"
     >
       <div className="p-0">
         <ul className="nav d-flex justify-content-between">
@@ -51,7 +51,7 @@ const Carousel = () => {
       <div
         data-bs-spy="scroll"
         data-bs-smooth-scroll="true"
-        className="container scrollable-scrollspy overflow-hidden row row-cols-1 border border-warning rounded p-0"
+        className="container scrollable-scrollspy overflow-hidden row row-cols-1 border border-light rounded p-0"
         tabIndex="0"
       >
         <div
